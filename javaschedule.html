@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>ABC Learning Center</title>
+    <link rel="icon" href="abc logo.png" type ="image/x-icon" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+<section class="header">
+        <nav>
+            <a href="index.html"><img src="abc logo.png" id="logo" style="margin-left: -90px;"></a>
+            <header>
+                
+                <div class="navigation">
+                  <ul class="menu">
+                    <div class="close-btn"></div>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
+                    <li class="menu-item">
+                      <a class="sub-btn" href="#">Courses <i class="fa fa-angle-down"></i></a>
+                      <ul class="sub-menu">
+                        <li class="sub-item"><a href="course.html">All Courses</a></li>
+                        <li class="sub-item"><a href="HTML.html">HTML</a></li>
+                        <li class="sub-item"><a href="Javacourse.html">Java</a></li>
+                        
+                      </ul>
+                    </li>
+                   
+                    <li class="menu-item"><a href="contact.html">Contact us</a></li>
+                    <li class="menu-item"><a href="sitemap.html">Help</a></li>
+                    
+                    
+                  </ul>
+                </div>
+                <div class="menu-btn"></div>
+              </header>
+            
+        
+        </nav>
+<div class="text-box"> 
+    <h1>World's Biggest Learning Center</h1>
+    <p>Making website is now one of the biggest thing in the world. You just need to learn HTML, CSS,<br>Javascript and you are good to go.
+    </p>
+    <a href="about.html" class="hero-btn">Visit Us to know more</a>
+
+</div>        
+         
+
+</section>    
+
+<section class="table">
+    <h1>Schedule for Java</h1>
+    <table style="width: 80%">
+        <tr>
+          <th>Full time batches </th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Seats Avilable</th>
+        </tr>
+        <tr>
+          <td>Java [Batch 1]</td>
+          <td>27 December 2021</td>
+          <td>07 January 2021</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Java [Batch 2]</td>
+          <td>27 March 2021</td>
+          <td>07 April 2021</td>
+          <td>50</td>
+        </tr>
+        
+    </table>
+</section>    
+    
+
+
+
+<section class="table">
+
+    <table style="width: 80%">
+        <tr>
+          <th>Part time batches</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Seats Avilable</th>
+        </tr>
+        <tr>
+          <td>JAVA[Batch 1]</td>
+          <td>27 December 2021</td>
+          <td>07 January 2021</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>JAVA[Batch 2]</td>
+          <td>27 May 2021</td>
+          <td>07 June 2021</td>
+          <td>50</td>
+        </tr>
+        
+    </table>
+</section>
+
+
+
+
+
+
+<!-- Call to action -->
+
+<section class="cta">
+    <h1>Enroll for our various online courses <br>Anywhere from the World.</h1>
+    <a href="RegistrationForm.html" class="hero-btn">REGISTER NOW</a>
+
+</section>
+
+
+<!-- footer -->
+
+
+<section class="footer">
+    
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-f" id="fb"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter" id="fb"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" id="fb"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-linkdin" id="fb"></i></a>
+       
+       
+    </div>
+    <p> <a href="privacy.html" style="color: grey;">Privacy Policy</a></p>
+    <p>
+        © 2021 ABC Learning Center, Inc
+        <br>
+        Made with <i class="fa fa-heart-o"></i> by Tanya Shekhawat</p>  
+</section>
+
+    
+</body>
+</html>

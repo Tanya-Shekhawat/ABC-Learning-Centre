@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registration Form</title>
+    <meta name="keywords" content="Registration, Form, Course" />
+    <meta name="description"
+        content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='RegistrationForm.css' type='text/css' />
+    <script src="RegistrationForm.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>ABC Learning Center</title>
+    <link rel="icon" href="abc logo.png" type ="image/x-icon" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+    
+</head>
+
+<!-- Name, email, contact, course insterested, comments/ questions -->
+<body onload="document.registration.user_name.focus();" style="background-color: aqua;">
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="abc logo.png" id="logo" style="margin-left: -90px;"></a>
+            <header>
+                
+                <div class="navigation">
+                  <ul class="menu">
+                    <div class="close-btn"></div>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
+                    <li class="menu-item">
+                      <a class="sub-btn" href="#">Courses <i class="fa fa-angle-down"></i></a>
+                      <ul class="sub-menu">
+                        <li class="sub-item"><a href="course.html">All Courses</a></li>
+                        <li class="sub-item"><a href="HTML.html">HTML</a></li>
+                        <li class="sub-item"><a href="Javacourse.html">Java</a></li>
+                        
+                      </ul>
+                    </li>
+                   
+                    <li class="menu-item"><a href="contact.html">Contact us</a></li>
+                    <li class="menu-item"><a href="sitemap.html">Help</a></li>
+                    
+                    
+                  </ul>
+                </div>
+                <div class="menu-btn"></div>
+              </header>
+            
+        
+        </nav>
+<div class="text-box"> 
+    <h1>World's Biggest Learning Center</h1>
+    <p>Making website is now one of the biggest thing in the world. You just need to learn HTML, CSS,<br>Javascript and you are good to go.
+    </p>
+    <a href="about.html" class="hero-btn">Visit Us to know more</a>
+
+</div>        
+         
+
+</section>      
+    <h1>Registration Form</h1>
+    
+    <form action="thanku.html" name='registration' onSubmit="return formValidation();">
+        <div class="form" style="margin-left: 520px;">
+
+         <label for="user-name">Name:</label>
+         <input type="text" name="user_name" id="user_name" size="50" placeholder="Enter User Name here" required />
+         <br>
+         <label id="gender">Gender:</label>
+         <input type="radio" name="gender" value="Male" checked /><span>Male</span>
+         <input type="radio" name="gender" value="Female" /><span>Female</span>
+         <br>
+
+         <label for="email">Email:</label>
+         <input type="text" name="email" id="email" size="50" placeholder="Enter your email here" required />
+         <br>
+         <label for="pwd">Password:</label>
+         <input type="password" name="pwd" id="pwd" size="12" placeholder="Enter your password here" required />
+         <br>
+         <label for="contact">Contact:</label>
+         <input type="tel" name="contact" id="contact" size="8" placeholder="Enter your contact number here" required />
+         <br>
+         <label for="address">Address:</label>
+         <input type="text" name="address" id="address" size="50" placeholder="Enter your Address here" />
+         <br>
+         <label for="country">Country:</label>
+         <select name="country" id="country">
+            <option selected="" value="Default">(Please select a country)</option>
+            <option value="AS">Australia</option>
+            <option value="CN">Canada</option>
+            <option value="IN">India</option>
+            <option value="SG">Singapore</option>
+            <option value="US">USA</option>
+         </select>
+         <br>
+         <label>Language:</label>
+         <input type="checkbox" name="langEN" id="langEN" value="en" checked /><span>English</span>
+         <input type="checkbox" name="langNonEN" id="langNonEN" value="non-en" /><span>Non English</span>
+         <br>
+         <label for="comments">comments:</label>
+         <textarea name="commnets" id="comments" rows="5" cols="50" placeholder="Enter your comments here"></textarea>
+         <br>
+         <input type="submit" name="submit" value="Submit" />
+        </div>
+
+    </form>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    <section class="footer">
+    
+        <div class="icons">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook-f" id="fb"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter" id="fb"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" id="fb"></i></a>
+            <a href="https://www.facebook.com/"><i class="fa fa-linkdin" id="fb"></i></a>
+           
+           
+        </div>
+        <p> <a href="privacy.html" style="color: grey;">Privacy Policy</a></p>
+        <p>
+            © 2021 ABC Learning Center, Inc
+            <br>
+            Made with <i class="fa fa-heart-o"></i> by Tanya Shekhawat</p>  
+    </section>
+</body>
+
+</html>

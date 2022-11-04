@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>ABC Learning Center</title>
+    <link rel="icon" href="abc logo.png" type ="image/x-icon" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</head>
+<body>
+<section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="abc logo.png" id="logo1"></a>
+            <header>
+                
+                <div class="navigation">
+                  <ul class="menu">
+                    <div class="close-btn"></div>
+                    <li class="menu-item"><a href="index.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About</a></li>
+                    <li class="menu-item">
+                      <a class="sub-btn" href="#">Courses <i class="fa fa-angle-down"></i></a>
+                      <ul class="sub-menu">
+                        <li class="sub-item"><a href="course.html">All Courses</a></li>
+                        <li class="sub-item"><a href="HTML.html">HTML</a></li>
+                        <li class="sub-item"><a href="Javacourse.html">Java</a></li>
+                        
+                      </ul>
+                    </li>
+                   
+                    <li class="menu-item"><a href="contact.html">Contact us</a></li>
+                    <li class="menu-item"><a href="sitemap.html">Help</a></li>
+                    
+                    
+                  </ul>
+                </div>
+                <div class="menu-btn"></div>
+              </header>
+        
+        </nav>
+        <h1>Contact Us</h1>
+       
+         
+
+</section>
+<!-------contact us--------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/d/embed?mid=1A6llLoKdshmBLJNvDFdICvaMN6k&ehbc=2E312F" width="640" height="480"></iframe> 
+
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+               <i class="fa fa-home"></i>
+               <span>
+                  <h5>XYZ Road, ABC Building</h5>
+                  <p>Banglore, Karnataka, IN</p>
+               </span>    
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 0123456789</h5>
+                    <p>Monday to Friday,9AM to 6PM</p>
+                </span>    
+            </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <span>
+                    <h5>info@abclearningcentre.com</h5>
+                    <p>Email us your query</p>
+                </span> 
+              </div>
+        </div>
+        <div class="contact-col">
+            <form action="">
+                <input type="text" placeholder="Enter your name" required></input>
+                <input type="email" placeholder="Enter your email address" required></input>
+                <input type="text" placeholder="Enter your subject" required></input>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+ 
+    
+
+<!-- footer -->
+
+
+<section class="footer">
+    
+    <div class="icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-f" id="fb"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter" id="fb"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" id="fb"></i></a>
+        <a href="https://www.facebook.com/"><i class="fa fa-linkdin" id="fb"></i></a>
+       
+       
+    </div>
+    <p> <a href="privacy.html" style="color: grey;">Privacy Policy</a></p>
+    <p>
+        © 2021 ABC Learning Center, Inc
+        <br>
+        Made with <i class="fa fa-heart-o"></i> by Tanya Shekhawat</p>  
+</section>
+
+
+
+    
+</body>
+</html>
