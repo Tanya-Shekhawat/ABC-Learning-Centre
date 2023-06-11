@@ -10,5 +10,3 @@ Story Board
 Information flow for lead generation form and Admin 
 <img width="800" alt="image" src="https://user-images.githubusercontent.com/98897446/200040604-cf833050-6931-4aa1-bea1-8a35b1723f33.png">
 
-
-Website Live Demo: https://yves54.github.io/ABC-Learning-Centre/
